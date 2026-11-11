@@ -1,0 +1,16 @@
+# Motion datasets and derived trajectories stay local.
+/motions/
+__pycache__/
+*.py[cod]
+
+# Full-library per-motion reports stay local.
+/robots/g1_23dof/verification/bones_seed/
+
+# Generated diagnostics stay local. Keep configuration validation and the replay list.
+/robots/g1_23dof/verification/*
+!/robots/g1_23dof/verification/official_pipeline_review.json
+!/robots/g1_23dof/verification/retargeting.json
+!/robots/g1_23dof/verification/legacy_recheck/
+/robots/g1_23dof/verification/legacy_recheck/*
+!/robots/g1_23dof/verification/legacy_recheck/summary.json
+!/robots/g1_23dof/verification/legacy_recheck/training_paths.txt

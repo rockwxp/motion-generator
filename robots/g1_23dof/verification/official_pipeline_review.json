@@ -1,0 +1,211 @@
+{
+  "official_pipeline_reproduced": true,
+  "comparison_scope": "Three exact official paired BVH/29DoF CSV files, pinned to installed SOMA revision. No claim of exact bitwise equality.",
+  "official_comparison": [
+    {
+      "motion": "Neutral_walk_forward_002__A057",
+      "soma_commit": "cbdb2b494a2af82137bf9b6f15122d60167281c4",
+      "frames": 1088,
+      "sample_rate": 120.0,
+      "joint_count": 29,
+      "source_sha256": "c0f4e63cec94c58196105a6d9f03a2ed1c94c8ff4fba15dd0a33cc512877904a",
+      "reference_sha256": "588cd1ce4aa55e1c0a7bc5df1dad8fe192cacca785b3cd97292941b2362a4dbd",
+      "output_sha256": "82f9f0d55fac3e34976cef80216962f0ad3f5bed22f7702066aeaf5dfd17a96a",
+      "max_root_position_difference_m": 3.635420388704173e-05,
+      "max_root_rotation_difference_rad": 4.839552141211388e-06,
+      "max_joint_difference_rad": 0.0011559724807739258,
+      "mean_joint_difference_rad": 4.81196244083842e-06,
+      "worst_joint": "right_shoulder_yaw_joint",
+      "scope": "Direct official pipeline, unchanged bundled 29DoF config, no custom ground alignment or filtering. Numerical comparison only; not physics validation."
+    },
+    {
+      "motion": "wave_R_001__A428",
+      "soma_commit": "cbdb2b494a2af82137bf9b6f15122d60167281c4",
+      "frames": 525,
+      "sample_rate": 120.0,
+      "joint_count": 29,
+      "source_sha256": "63a425ea3aa5f62ac54a00e9cba584953fce47fda368510ddb0617358f19a723",
+      "reference_sha256": "65717417dffa583ba2efed7c01b6279f28e3a2eaf18877714cbc28d2f84f0fd9",
+      "output_sha256": "0958fd4e51b1de09f69d2fb32c3864003cfb4abf98c28296a04cff7d4752e0ff",
+      "max_root_position_difference_m": 2.4443851108596486e-05,
+      "max_root_rotation_difference_rad": 2.993316538212512e-06,
+      "max_joint_difference_rad": 0.0009092092514038086,
+      "mean_joint_difference_rad": 4.6568783545509715e-06,
+      "worst_joint": "right_shoulder_pitch_joint",
+      "scope": "Direct official pipeline, unchanged bundled 29DoF config, no custom ground alignment or filtering. Numerical comparison only; not physics validation."
+    },
+    {
+      "motion": "item_pick_up_standing_R_001__A410",
+      "soma_commit": "cbdb2b494a2af82137bf9b6f15122d60167281c4",
+      "frames": 424,
+      "sample_rate": 120.0,
+      "joint_count": 29,
+      "source_sha256": "9476ee1875b0afa3efa9708fd89ae530503a1b6c9ffcb1e357bcd447b383ece8",
+      "reference_sha256": "9fb6b11b59997d8ce3c65df8ac5e9d165d1952af29419a81d4506b075bc60d34",
+      "output_sha256": "0f1bb01b40e0d4143092d08c7f1feaab50fe80d12ff9dec3789f336fee57978b",
+      "max_root_position_difference_m": 1.9506422264795283e-05,
+      "max_root_rotation_difference_rad": 7.394099729049047e-06,
+      "max_joint_difference_rad": 0.0008409619331359863,
+      "mean_joint_difference_rad": 6.371694757013098e-06,
+      "worst_joint": "right_shoulder_yaw_joint",
+      "scope": "Direct official pipeline, unchanged bundled 29DoF config, no custom ground alignment or filtering. Numerical comparison only; not physics validation."
+    }
+  ],
+  "official_geometry": {
+    "model_sha256": "16a6964450e379440b2f430151ee7ba921e43a94de052610e86e4c301ba13ad8",
+    "scope": "Read-only FK of official published 29DoF CSV files with the bundled official model. Same enabled-geometry distance and foot-sphere definitions as the native checker. No IK, ground correction or physics stepping. Convex overlap is not automatically proof of triangle mesh penetration.",
+    "results": [
+      {
+        "motion": "Neutral_walk_forward_002__A057",
+        "reference_sha256": "588cd1ce4aa55e1c0a7bc5df1dad8fe192cacca785b3cd97292941b2362a4dbd",
+        "frames": 1088,
+        "minimum_foot_height_m": -0.017132948731193958,
+        "median_lowest_foot_height_m": -0.004452318186286749,
+        "max_self_penetration_m": 0.02289530421451757,
+        "worst_collision_pair": [
+          "right_hip_roll_link",
+          "right_wrist_yaw_link"
+        ]
+      },
+      {
+        "motion": "wave_R_001__A428",
+        "reference_sha256": "65717417dffa583ba2efed7c01b6279f28e3a2eaf18877714cbc28d2f84f0fd9",
+        "frames": 525,
+        "minimum_foot_height_m": -0.017429567413649327,
+        "median_lowest_foot_height_m": -0.010652449337156197,
+        "max_self_penetration_m": 0.016482065555247522,
+        "worst_collision_pair": [
+          "right_hip_roll_link",
+          "right_wrist_yaw_link"
+        ]
+      },
+      {
+        "motion": "item_pick_up_standing_R_001__A410",
+        "reference_sha256": "9fb6b11b59997d8ce3c65df8ac5e9d165d1952af29419a81d4506b075bc60d34",
+        "frames": 424,
+        "minimum_foot_height_m": -0.00427681547061694,
+        "median_lowest_foot_height_m": -0.0035970122671373115,
+        "max_self_penetration_m": 0.06340040649787071,
+        "worst_collision_pair": [
+          "right_hip_yaw_link",
+          "right_elbow_link"
+        ]
+      }
+    ]
+  },
+  "native_configuration_files_unchanged_since_static_alignment_test": true,
+  "native_static_alignment_report_sha256": "179e45981b75112a3733a1a102b9dedc331a13ce9d44d4fe3a289377af1c7800",
+  "native_results": [
+    {
+      "motion": "Neutral_walk_forward_002__A057",
+      "source_sha256": "c0f4e63cec94c58196105a6d9f03a2ed1c94c8ff4fba15dd0a33cc512877904a",
+      "report": "robots/g1_23dof/verification/soma_official/Neutral_walk_forward_002__A057.json",
+      "report_sha256": "9467e5deef9f39ae14bd3ef4dc56a1d01fe1171e75870d231e17cc2e28f40c7d",
+      "reused": false,
+      "saved_under_previous_policy": true,
+      "metrics": {
+        "frames": 1088,
+        "duration_s": 9.057971,
+        "fps": 120.00480019200798,
+        "joint_limit_excess_rad": 0.0,
+        "max_joint_speed_rad_s": 13.242872783034306,
+        "max_root_speed_m_s": 1.434652188645981,
+        "max_root_angular_speed_rad_s": 2.3736604568406388,
+        "max_joint_limit_saturation_fraction": 0.06893382352941177,
+        "min_foot_height_m": -0.036126437858673414,
+        "max_foot_penetration_m": 0.036126437858673414,
+        "max_stance_foot_speed_m_s": 0.09192421288475046,
+        "stance_intervals": 1055,
+        "contact_method": "SOMA source contact detector; consecutive full-contact frames",
+        "grounded_frame_fraction": 1.0,
+        "max_self_penetration_m": 0.03953468123279032,
+        "worst_collision_pair": [
+          "right_hip_roll_link",
+          "right_wrist_roll_rubber_hand"
+        ],
+        "worst_collision_frame": 595
+      },
+      "failures": [],
+      "warnings": [
+        "Ground alignment exceeds the legacy diagnostic bound; no shift applied.",
+        "max_joint_speed_rad_s: 13.2429 > 12",
+        "max_foot_penetration_m: 0.0361264 > 0.02",
+        "max_self_penetration_m: 0.0395347 > 0.005"
+      ]
+    },
+    {
+      "motion": "wave_R_001__A428",
+      "source_sha256": "63a425ea3aa5f62ac54a00e9cba584953fce47fda368510ddb0617358f19a723",
+      "report": "robots/g1_23dof/verification/wave_R_001__A428.json",
+      "report_sha256": "9c3197b02a7b7242fad82414b630dcf764af811525b8a9caccd79bfadebbce85",
+      "reused": true,
+      "saved_under_previous_policy": true,
+      "metrics": {
+        "frames": 525,
+        "duration_s": 4.366492,
+        "fps": 120.00480019200877,
+        "joint_limit_excess_rad": 0.0,
+        "max_joint_speed_rad_s": 7.038473095854441,
+        "max_root_speed_m_s": 0.6029607327340958,
+        "max_root_angular_speed_rad_s": 1.1320255794407796,
+        "max_joint_limit_saturation_fraction": 0.07238095238095238,
+        "min_foot_height_m": -1.7459964497638925e-08,
+        "max_foot_penetration_m": 1.7459964497638925e-08,
+        "max_stance_foot_speed_m_s": 0.16509373512466236,
+        "stance_intervals": 909,
+        "contact_method": "SOMA source contact detector; consecutive full-contact frames",
+        "grounded_frame_fraction": 1.0,
+        "max_self_penetration_m": 0.001741222699171427,
+        "worst_collision_pair": [
+          "right_hip_roll_link",
+          "right_wrist_roll_rubber_hand"
+        ],
+        "worst_collision_frame": 465
+      },
+      "failures": [],
+      "warnings": []
+    },
+    {
+      "motion": "item_pick_up_standing_R_001__A410",
+      "source_sha256": "9476ee1875b0afa3efa9708fd89ae530503a1b6c9ffcb1e357bcd447b383ece8",
+      "report": "robots/g1_23dof/verification/bones_seed/item_pick_up_standing_R_001__A410.json",
+      "report_sha256": "7dca2aa149d346b88d7d695455ade64cf42e82638f4b694b2d86770caac4c31e",
+      "reused": true,
+      "saved_under_previous_policy": false,
+      "metrics": {
+        "frames": 424,
+        "duration_s": 3.524859,
+        "fps": 120.00480019200877,
+        "joint_limit_excess_rad": 0.0,
+        "max_joint_speed_rad_s": 4.393398067923431,
+        "max_root_speed_m_s": 0.8844376972968327,
+        "max_root_angular_speed_rad_s": 1.6383757480919166,
+        "max_joint_limit_saturation_fraction": 0.07783018867924528,
+        "min_foot_height_m": -2.296514170756908e-08,
+        "max_foot_penetration_m": 2.296514170756908e-08,
+        "max_stance_foot_speed_m_s": 0.03726112565031588,
+        "stance_intervals": 846,
+        "contact_method": "SOMA source contact detector; consecutive full-contact frames",
+        "grounded_frame_fraction": 1.0,
+        "max_self_penetration_m": 0.07496616684542329,
+        "worst_collision_pair": [
+          "right_hip_yaw_link",
+          "right_wrist_roll_rubber_hand"
+        ],
+        "worst_collision_frame": 99
+      },
+      "failures": [
+        "max_self_penetration_m: 0.0749662 > 0.005"
+      ],
+      "warnings": []
+    }
+  ],
+  "conclusions": [
+    "Direct official 29DoF reproduction matches closely: maximum joint discrepancy below 0.00116 rad and maximum root translation discrepancy below 0.000037 m.",
+    "Native 23DoF configuration loads, has verified static alignment and unchanged configuration hashes. Native wave result and pickup rejection were reused; only the previously unprocessed official walk was generated.",
+    "Official 29DoF reference trajectories also trigger enabled collision-geometry overlap and below-plane foot-sphere measurements. These diagnostics alone cannot distinguish a configuration error from limitations of the supplied kinematic references.",
+    "The native pickup outcome remains rejected and preserved. One poor motion does not block unrelated selected sources.",
+    "No temporal filter, custom bone adaptation, robot access or controller training was used.",
+    "Configuration validity does not establish per-motion fidelity or physical executability. Unvalidated diagnostic thresholds must not be presented as official acceptance standards."
+  ]
+}

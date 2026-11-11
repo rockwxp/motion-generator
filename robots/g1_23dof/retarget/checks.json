@@ -1,0 +1,21 @@
+{
+  "scope": "Initial flat-ground kinematic screening, not hardware safety limits.",
+  "foot_bodies": [
+    "left_ankle_roll_link",
+    "right_ankle_roll_link"
+  ],
+  "quaternion_norm_tolerance": 0.0001,
+  "joint_limit_tolerance_rad": 1e-05,
+  "limit_margin_rad": 0.002,
+  "max_limit_saturation_fraction": 0.5,
+  "max_joint_speed_rad_s": 12.0,
+  "max_root_speed_m_s": 2.0,
+  "max_root_angular_speed_rad_s": 8.0,
+  "max_foot_penetration_m": 0.02,
+  "contact_height_m": 0.05,
+  "contact_vertical_speed_m_s": 0.1,
+  "max_stance_foot_speed_m_s": 0.2,
+  "min_grounded_frame_fraction": 0.95,
+  "max_self_penetration_m": 0.005,
+  "ground_alignment_max_shift_m": 0.03
+}

@@ -1,0 +1,9 @@
+{
+  "name": "unitree_g1_23dof",
+  "desc": {
+    "xml_path": "model/g1_23dof.xml"
+  },
+  "retarget_configs": {
+    "soma": "retarget/retargeter.json"
+  }
+}
